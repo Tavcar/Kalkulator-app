@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Preprost kalkulator</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <h1>Preprost kalkulator</h1>
+    
+    <form method="post" action="/">
+        
+        <input name="x" placeholder="vnesite prvo število">
+        <input name="y" placeholder="vnesite drugo število">
+        <br>
+        <br>
+        
+        <div>
+            <button type="submit" name="operacija" value="+">+</button>
+            <button type="submit" name="operacija" value="-">-</button>
+            <button type="submit" name="operacija" value="*">*</button>
+            <button type="submit" name="operacija" value="/">/</button>
+        </div>
+        
+    </form>
+    
+    <div class="result">
+        <p>Rezultat: {{ message }}</p>
+    </div>
+    
+</body>
+</html>
+<!-- Kako urejam stran z rezultatom, oz. kako naredim da uporablja css-->
